@@ -23,7 +23,7 @@ struct HomeButtonView: View {
                         .padding(.top, 34)
                 }
                 .frame(width: 120, height: 180)
-                .foregroundColor(Color("Main"))
+                .foregroundColor(Color("E65844"))
                 .font(.system(size: 20, weight: .bold))
                 .padding()
                 .background(Color(.white))
@@ -46,7 +46,7 @@ struct HomeButtonView: View {
                         .padding(.top, 34)
                 }
                 .frame(width: 120, height: 180)
-                .foregroundColor(Color("Main"))
+                .foregroundColor(Color("E65844"))
                 .font(.system(size: 20, weight: .bold))
                 .padding()
                 .background(Color(.white))

@@ -13,7 +13,7 @@ struct AppleBoardView: View {
       var string = AttributedString("목표를 총 8번 달성하셨네요!")
     
       if let this = string.range(of: "8") {
-        string[this].foregroundColor = Color("Main")
+        string[this].foregroundColor = Color("E65844")
       }
             
       return string
