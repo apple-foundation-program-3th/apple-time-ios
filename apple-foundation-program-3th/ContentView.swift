@@ -1,18 +1,22 @@
-//
-//  ContentView.swift
-//  apple-foundation-program-3th
-//
-//  Created by Mirae on 8/14/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var oaisin: Bool = true
+    
     var body: some View {
-        HomeView()
+        ZStack {
+            HomeView()
+            
+            if (oaisin) {
+                OnboardView()
+            }
+        }
+        .onAppear() {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+                oaisin = false
+            }
+        }
     }
 }
 
-#Preview {
-    ContentView()
-}
