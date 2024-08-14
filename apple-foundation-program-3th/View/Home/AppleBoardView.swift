@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct AppleBoardView: View {
-    
+    var appleCount: Int
     var attributedString: AttributedString {
-      var string = AttributedString("목표를 총 8번 달성하셨네요!")
+      var string = AttributedString("목표를 총 \(appleCount)번 달성하셨네요!")
     
-      if let this = string.range(of: "8") {
+      if let this = string.range(of: "\(appleCount)") {
         string[this].foregroundColor = Color("E65844")
       }
             
@@ -43,5 +43,5 @@ struct AppleBoardView: View {
 }
 
 #Preview {
-    AppleBoardView()
+    AppleBoardView(appleCount: 8)
 }

@@ -30,7 +30,7 @@ struct HomeView: View {
                     
                     HomeButtonView()
                     
-                    AppleBoardView()
+                    AppleBoardView(appleCount: 8)
                 }
             }
         }

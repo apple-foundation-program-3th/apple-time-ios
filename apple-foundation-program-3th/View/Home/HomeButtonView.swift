@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeButtonView: View {
     var body: some View {
         HStack {
-            NavigationLink(destination: BomodrowTimerView()) {
+            NavigationLink(destination: MainTimerView()) {
                 VStack(alignment: .leading) {
                     Image(systemName: "timer")
                         .padding(.bottom)
