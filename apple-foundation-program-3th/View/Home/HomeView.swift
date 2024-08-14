@@ -12,8 +12,8 @@ struct HomeView: View {
     var body: some View {
         NavigationView{
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [Color(.red), Color(.white)]),
-                               startPoint: .top, endPoint: UnitPoint(x: 0.5, y: 0.6))
+                LinearGradient(gradient: Gradient(colors: [Color("Main"), Color(.white)]),
+                               startPoint: UnitPoint(x: 0.5, y: 0.15), endPoint: UnitPoint(x: 0.5, y: 0.6))
                 .edgesIgnoringSafeArea(.all)
                 
                 VStack{
