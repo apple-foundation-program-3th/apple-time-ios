@@ -30,18 +30,6 @@ struct HomeView: View {
                     
                     HomeButtonView()
                     
-                    VStack(alignment: .leading){
-                        Text("내가 모은 사과👀")
-                            .font(.title2)
-                            .fontWeight(.bold)
-                            .padding(.bottom, 1)
-                        Text("목표를 총 8번 달성하셨네요!")
-                            .font(.title3)
-                            .fontWeight(.regular)
-                    }
-                    .padding(.top, 30)
-                    .padding(.trailing, 100)
-                    
                     AppleBoardView()
                 }
             }

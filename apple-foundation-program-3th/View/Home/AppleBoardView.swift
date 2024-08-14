@@ -8,7 +8,33 @@
 import SwiftUI
 
 struct AppleBoardView: View {
+    
+    var attributedString: AttributedString {
+      var string = AttributedString("목표를 총 8번 달성하셨네요!")
+    
+      if let this = string.range(of: "8") {
+        string[this].foregroundColor = .red
+      }
+            
+      return string
+    }
+
+    
+    
+    
     var body: some View {
+        VStack(alignment: .leading){
+            Text("내가 모은 사과👀")
+                .font(.title2)
+                .fontWeight(.bold)
+                .padding(.bottom, 1)
+            Text(attributedString)
+                .font(.title3)
+                .fontWeight(.regular)
+        }
+        .padding(.top, 30)
+        .padding(.trailing, 100)
+        
         RoundedRectangle(cornerRadius: 10)
             .frame(width: 335, height: 248)
             .foregroundColor(.white)
