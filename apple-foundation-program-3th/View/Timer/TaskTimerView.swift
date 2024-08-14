@@ -18,7 +18,7 @@ struct TaskTimerView: View {
                     .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(Color("181818"))
-                    .padding(.bottom, 70)
+                    .padding(.bottom, 60)
                     .padding(.trailing, 150)
                 
                 ZStack{
@@ -34,9 +34,9 @@ struct TaskTimerView: View {
                     
                     VStack{
                         Text("사과 생성까지")
-                            .font(.system(size: 21))
+                            .font(.system(size: 19))
                             .foregroundColor(Color("181818"))
-                            .fontWeight(.light)
+                            .fontWeight(.medium)
                         Text("00:00:00")
                             .font(.system(size: 47))
                             .foregroundColor(Color("181818"))
@@ -44,20 +44,44 @@ struct TaskTimerView: View {
                     }
                 }
                 .padding(.top, 10)
-                .padding(.bottom, 80)
+                .padding(.bottom, 60)
                 
                 HStack{
                     VStack{
                         Text("설정 목표 시간")
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.black.opacity(0.25))
+                            .padding(.bottom, 0.5)
+                        
                         Text("01:00:00")
+                            .font(.system(size: 20))
+                            .fontWeight(.bold)
+                            .padding(.bottom, 0.5)
+                        
+                        Text("수정하기")
+                            .fontWeight(.medium)
+                            .foregroundColor(Color("E65844"))
                     }
+                    .padding(.trailing, 40)
                     
                     VStack{
                         Text("설정 휴식 시간")
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.black.opacity(0.25))
+                            .padding(.bottom,1)
+                        
                         Text("00:20:00")
+                            .font(.system(size: 20))
+                            .fontWeight(.bold)
+                            .padding(.bottom, 0.5)
+                        
+                        Text("수정하기")
+                            .fontWeight(.medium)
+                            .foregroundColor(Color("E65844"))
+                        
                     }
                 }
-                
+                .padding(.bottom, 30)
                 
                 StopButtonView()
                     .padding(.bottom, 50)
