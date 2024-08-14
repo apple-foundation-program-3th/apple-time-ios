@@ -150,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				879D94762C6C6186003624AA /* Onboard */,
-				093F6FA02C6C399100CA7006 /* Timer */,
+				093F6FA02C6C399100CA7006 /* TaskTimer */,
 				7A664C952C6C35DB00FE03D6 /* Home */,
 				7A664C9C2C6C363E00FE03D6 /* BomodrowTimerView.swift */,
 				7A664C9E2C6C368800FE03D6 /* ToDoListView.swift */,
@@ -158,14 +158,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		093F6FA02C6C399100CA7006 /* Timer */ = {
+		093F6FA02C6C399100CA7006 /* TaskTimer */ = {
 			isa = PBXGroup;
 			children = (
 				093F6FA12C6C39BA00CA7006 /* TaskTimerView.swift */,
 				093F6FA32C6C3C2F00CA7006 /* BackButtonView.swift */,
 				093F6FA52C6C4C9D00CA7006 /* StopButtonView.swift */,
 			);
-			path = Timer;
+			path = TaskTimer;
 			sourceTree = "<group>";
 		};
 		7A664C952C6C35DB00FE03D6 /* Home */ = {
