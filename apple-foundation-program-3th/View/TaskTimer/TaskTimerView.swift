@@ -87,6 +87,7 @@ struct TaskTimerView: View {
                     .padding(.bottom, 50)
             }
         }
+                .navigationBarBackButtonHidden()
     }
 }
 

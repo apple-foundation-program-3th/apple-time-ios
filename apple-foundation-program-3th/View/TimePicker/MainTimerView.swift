@@ -12,6 +12,9 @@ struct MainTimerView: View {
     var body: some View {
         NavigationView{
             VStack{
+                
+                    BackButtonView()
+                        .offset(x:-150)
                 Text("목표 시간 설정")
                     .font(.title2)
                     .fontWeight(.bold)
@@ -48,7 +51,7 @@ struct MainTimerView: View {
                 
             }
         }
-        //        .navigationBarBackButtonHidden()
+                .navigationBarBackButtonHidden()
     }
 }
 
