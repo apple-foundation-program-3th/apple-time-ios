@@ -22,6 +22,7 @@
 		7A664C9B2C6C361100FE03D6 /* AppleBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A664C9A2C6C361100FE03D6 /* AppleBoardView.swift */; };
 		7A664C9D2C6C363E00FE03D6 /* BomodrowTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A664C9C2C6C363E00FE03D6 /* BomodrowTimerView.swift */; };
 		7A664C9F2C6C368800FE03D6 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A664C9E2C6C368800FE03D6 /* ToDoListView.swift */; };
+		879D94782C6C61A3003624AA /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879D94772C6C61A3003624AA /* OnboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		7A664C9A2C6C361100FE03D6 /* AppleBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleBoardView.swift; sourceTree = "<group>"; };
 		7A664C9C2C6C363E00FE03D6 /* BomodrowTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BomodrowTimerView.swift; sourceTree = "<group>"; };
 		7A664C9E2C6C368800FE03D6 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		879D94772C6C61A3003624AA /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		093F6F9B2C6C30DE00CA7006 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				879D94762C6C6186003624AA /* Onboard */,
 				093F6FA02C6C399100CA7006 /* Timer */,
 				7A664C952C6C35DB00FE03D6 /* Home */,
 				7A664C9C2C6C363E00FE03D6 /* BomodrowTimerView.swift */,
@@ -173,6 +176,14 @@
 				7A664C9A2C6C361100FE03D6 /* AppleBoardView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		879D94762C6C6186003624AA /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				879D94772C6C61A3003624AA /* OnboardView.swift */,
+			);
+			path = Onboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +325,7 @@
 				7A664C972C6C35E500FE03D6 /* HomeView.swift in Sources */,
 				093F6FA22C6C39BA00CA7006 /* TaskTimerView.swift in Sources */,
 				093F6FA62C6C4C9D00CA7006 /* StopButtonView.swift in Sources */,
+				879D94782C6C61A3003624AA /* OnboardView.swift in Sources */,
 				7A664C9D2C6C363E00FE03D6 /* BomodrowTimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
