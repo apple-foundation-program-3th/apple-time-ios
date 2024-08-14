@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ToDoListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("여기는 투두 리스트가 올 자리입니다!")
     }
 }
 
