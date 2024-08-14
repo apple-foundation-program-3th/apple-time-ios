@@ -20,15 +20,31 @@ struct TaskTimerView: View {
                     .foregroundColor(Color("181818"))
                     .padding(.bottom, 200)
                     .padding(.trailing, 150)
+                
                 ZStack{
                     Circle()
-                        .fill(.black.opacity(0.03))
-                        .padding(-40)
+                        .trim(from: 0, to: 1)
+                            .stroke(Color.black.opacity(0.09), style: StrokeStyle(lineWidth: 35, lineCap: .round))
+                        .frame(width: 280, height: 280)
                     Circle()
-                        .fill(.white)
-                        .padding(0)
-                }
+                        .trim(from: 0, to: 0.05)
+                            .stroke(Color("E65844"), style: StrokeStyle(lineWidth: 35, lineCap: .round))
+                        .frame(width: 280, height: 280)
+                        .rotationEffect(.init(degrees: -90))
                     
+                    VStack{
+                        Text("사과 생성까지")
+                            .font(.system(size: 21))
+                            .foregroundColor(Color("181818"))
+                            .fontWeight(.light)
+                        Text("00:00:00")
+                            .font(.system(size: 47))
+                            .foregroundColor(Color("181818"))
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    }
+                }
+                .padding(.top, 10)
+
             }
         }
     }
