@@ -18,7 +18,7 @@ struct TaskTimerView: View {
                     .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(Color("181818"))
-                    .padding(.bottom, 200)
+                    .padding(.bottom, 70)
                     .padding(.trailing, 150)
                 
                 ZStack{
@@ -44,11 +44,27 @@ struct TaskTimerView: View {
                     }
                 }
                 .padding(.top, 10)
-
+                }
+                .padding(.top, 10)
+                .padding(.bottom, 80)
+                
+                HStack{
+                    VStack{
+                        Text("설정 목표 시간")
+                        Text("01:00:00")
+                    }
+                    
+                    VStack{
+                        Text("설정 휴식 시간")
+                        Text("00:20:00")
+                    }
+                }
+                
+                StopButtonView()
+                    .padding(.bottom, 50)
             }
         }
     }
-}
 
 #Preview {
     TaskTimerView()
