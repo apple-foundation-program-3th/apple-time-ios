@@ -14,6 +14,8 @@
 		093F6F822C6C30A400CA7006 /* apple_foundation_program_3thTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F6F812C6C30A400CA7006 /* apple_foundation_program_3thTests.swift */; };
 		093F6F8C2C6C30A400CA7006 /* apple_foundation_program_3thUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F6F8B2C6C30A400CA7006 /* apple_foundation_program_3thUITests.swift */; };
 		093F6F8E2C6C30A400CA7006 /* apple_foundation_program_3thUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F6F8D2C6C30A400CA7006 /* apple_foundation_program_3thUITestsLaunchTests.swift */; };
+		093F6F9D2C6C34F600CA7006 /* AppleTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F6F9C2C6C34F600CA7006 /* AppleTimeModel.swift */; };
+		093F6F9F2C6C351800CA7006 /* TaskTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F6F9E2C6C351800CA7006 /* TaskTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		093F6F872C6C30A400CA7006 /* apple-foundation-program-3thUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "apple-foundation-program-3thUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		093F6F8B2C6C30A400CA7006 /* apple_foundation_program_3thUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apple_foundation_program_3thUITests.swift; sourceTree = "<group>"; };
 		093F6F8D2C6C30A400CA7006 /* apple_foundation_program_3thUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apple_foundation_program_3thUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		093F6F9C2C6C34F600CA7006 /* AppleTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTimeModel.swift; sourceTree = "<group>"; };
+		093F6F9E2C6C351800CA7006 /* TaskTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		093F6F9A2C6C30C400CA7006 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				093F6F9C2C6C34F600CA7006 /* AppleTimeModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 		093F6F9B2C6C30DE00CA7006 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				093F6F9E2C6C351800CA7006 /* TaskTimer.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,6 +281,8 @@
 			files = (
 				093F6F732C6C30A300CA7006 /* ContentView.swift in Sources */,
 				093F6F712C6C30A300CA7006 /* apple_foundation_program_3thApp.swift in Sources */,
+				093F6F9F2C6C351800CA7006 /* TaskTimer.swift in Sources */,
+				093F6F9D2C6C34F600CA7006 /* AppleTimeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
