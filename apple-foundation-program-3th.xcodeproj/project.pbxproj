@@ -24,6 +24,10 @@
 		7A664C9B2C6C361100FE03D6 /* AppleBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A664C9A2C6C361100FE03D6 /* AppleBoardView.swift */; };
 		7A664C9D2C6C363E00FE03D6 /* BomodrowTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A664C9C2C6C363E00FE03D6 /* BomodrowTimerView.swift */; };
 		7A664C9F2C6C368800FE03D6 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A664C9E2C6C368800FE03D6 /* ToDoListView.swift */; };
+		7A664CAA2C6C6A0A00FE03D6 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A664CA92C6C6A0A00FE03D6 /* TimerViewModel.swift */; };
+		7A664CAD2C6C6A4C00FE03D6 /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A664CAC2C6C6A4C00FE03D6 /* TimePickerView.swift */; };
+		7A664CAF2C6C6A7500FE03D6 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A664CAE2C6C6A7500FE03D6 /* TimerView.swift */; };
+		7A664CB12C6C6A9100FE03D6 /* MainTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A664CB02C6C6A9100FE03D6 /* MainTimerView.swift */; };
 		879D94782C6C61A3003624AA /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879D94772C6C61A3003624AA /* OnboardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +69,10 @@
 		7A664C9A2C6C361100FE03D6 /* AppleBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleBoardView.swift; sourceTree = "<group>"; };
 		7A664C9C2C6C363E00FE03D6 /* BomodrowTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BomodrowTimerView.swift; sourceTree = "<group>"; };
 		7A664C9E2C6C368800FE03D6 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		7A664CA92C6C6A0A00FE03D6 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		7A664CAC2C6C6A4C00FE03D6 /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		7A664CAE2C6C6A7500FE03D6 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		7A664CB02C6C6A9100FE03D6 /* MainTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTimerView.swift; sourceTree = "<group>"; };
 		879D94772C6C61A3003624AA /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +124,7 @@
 		093F6F6F2C6C30A300CA7006 /* apple-foundation-program-3th */ = {
 			isa = PBXGroup;
 			children = (
+				7A664CA82C6C69F200FE03D6 /* VIewModel */,
 				093F6F9B2C6C30DE00CA7006 /* View */,
 				093F6F702C6C30A300CA7006 /* apple_foundation_program_3thApp.swift */,
 				093F6F722C6C30A300CA7006 /* ContentView.swift */,
@@ -153,6 +162,7 @@
 		093F6F9B2C6C30DE00CA7006 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7A664CAB2C6C6A3400FE03D6 /* TimePicker */,
 				093F6FA92C6C6A3800CA7006 /* RestTimer */,
 				093F6FA02C6C399100CA7006 /* TaskTimer */,
 				879D94762C6C6186003624AA /* Onboard */,
@@ -190,6 +200,25 @@
 				7A664C9A2C6C361100FE03D6 /* AppleBoardView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		7A664CA82C6C69F200FE03D6 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7A664CA92C6C6A0A00FE03D6 /* TimerViewModel.swift */,
+			);
+			name = VIewModel;
+			path = View/VIewModel;
+			sourceTree = "<group>";
+		};
+		7A664CAB2C6C6A3400FE03D6 /* TimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				7A664CAC2C6C6A4C00FE03D6 /* TimePickerView.swift */,
+				7A664CAE2C6C6A7500FE03D6 /* TimerView.swift */,
+				7A664CB02C6C6A9100FE03D6 /* MainTimerView.swift */,
+			);
+			path = TimePicker;
 			sourceTree = "<group>";
 		};
 		879D94762C6C6186003624AA /* Onboard */ = {
@@ -330,15 +359,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A664CAF2C6C6A7500FE03D6 /* TimerView.swift in Sources */,
 				093F6F732C6C30A300CA7006 /* ContentView.swift in Sources */,
 				093F6FA42C6C3C2F00CA7006 /* BackButtonView.swift in Sources */,
 				7A664C992C6C35FD00FE03D6 /* HomeButtonView.swift in Sources */,
 				093F6FAF2C6C6C2100CA7006 /* RestStopButtonView.swift in Sources */,
 				7A664C9B2C6C361100FE03D6 /* AppleBoardView.swift in Sources */,
+				7A664CAA2C6C6A0A00FE03D6 /* TimerViewModel.swift in Sources */,
 				093F6FAB2C6C6A6800CA7006 /* RestTimerView.swift in Sources */,
 				7A664C9F2C6C368800FE03D6 /* ToDoListView.swift in Sources */,
 				093F6F712C6C30A300CA7006 /* apple_foundation_program_3thApp.swift in Sources */,
+				7A664CB12C6C6A9100FE03D6 /* MainTimerView.swift in Sources */,
 				7A664C972C6C35E500FE03D6 /* HomeView.swift in Sources */,
+				7A664CAD2C6C6A4C00FE03D6 /* TimePickerView.swift in Sources */,
 				093F6FA22C6C39BA00CA7006 /* TaskTimerView.swift in Sources */,
 				093F6FA62C6C4C9D00CA7006 /* TaskStopButtonView.swift in Sources */,
 				879D94782C6C61A3003624AA /* OnboardView.swift in Sources */,
