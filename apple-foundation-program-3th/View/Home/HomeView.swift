@@ -26,7 +26,7 @@ struct HomeView: View {
                     .foregroundColor(Color.white)
                     .padding(.bottom, 20.0)
                     .padding(.trailing, 100)
-                    .padding(.top, 60)
+                    .padding(.top, 100)
                     
                     HomeButtonView()
                     

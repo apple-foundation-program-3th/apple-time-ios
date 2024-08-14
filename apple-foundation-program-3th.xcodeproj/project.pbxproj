@@ -14,8 +14,8 @@
 		093F6F822C6C30A400CA7006 /* apple_foundation_program_3thTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F6F812C6C30A400CA7006 /* apple_foundation_program_3thTests.swift */; };
 		093F6F8C2C6C30A400CA7006 /* apple_foundation_program_3thUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F6F8B2C6C30A400CA7006 /* apple_foundation_program_3thUITests.swift */; };
 		093F6F8E2C6C30A400CA7006 /* apple_foundation_program_3thUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F6F8D2C6C30A400CA7006 /* apple_foundation_program_3thUITestsLaunchTests.swift */; };
-		093F6F9D2C6C34F600CA7006 /* AppleTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F6F9C2C6C34F600CA7006 /* AppleTimeModel.swift */; };
-		093F6F9F2C6C351800CA7006 /* TaskTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F6F9E2C6C351800CA7006 /* TaskTimer.swift */; };
+		093F6FA22C6C39BA00CA7006 /* TaskTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F6FA12C6C39BA00CA7006 /* TaskTimerView.swift */; };
+		093F6FA42C6C3C2F00CA7006 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F6FA32C6C3C2F00CA7006 /* BackButtonView.swift */; };
 		7A664C972C6C35E500FE03D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A664C962C6C35E500FE03D6 /* HomeView.swift */; };
 		7A664C992C6C35FD00FE03D6 /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A664C982C6C35FD00FE03D6 /* HomeButtonView.swift */; };
 		7A664C9B2C6C361100FE03D6 /* AppleBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A664C9A2C6C361100FE03D6 /* AppleBoardView.swift */; };
@@ -51,8 +51,8 @@
 		093F6F872C6C30A400CA7006 /* apple-foundation-program-3thUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "apple-foundation-program-3thUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		093F6F8B2C6C30A400CA7006 /* apple_foundation_program_3thUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apple_foundation_program_3thUITests.swift; sourceTree = "<group>"; };
 		093F6F8D2C6C30A400CA7006 /* apple_foundation_program_3thUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apple_foundation_program_3thUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		093F6F9C2C6C34F600CA7006 /* AppleTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTimeModel.swift; sourceTree = "<group>"; };
-		093F6F9E2C6C351800CA7006 /* TaskTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTimer.swift; sourceTree = "<group>"; };
+		093F6FA12C6C39BA00CA7006 /* TaskTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTimerView.swift; sourceTree = "<group>"; };
+		093F6FA32C6C3C2F00CA7006 /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 		7A664C962C6C35E500FE03D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7A664C982C6C35FD00FE03D6 /* HomeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonView.swift; sourceTree = "<group>"; };
 		7A664C9A2C6C361100FE03D6 /* AppleBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleBoardView.swift; sourceTree = "<group>"; };
@@ -109,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				093F6F9B2C6C30DE00CA7006 /* View */,
-				093F6F9A2C6C30C400CA7006 /* ViewModel */,
 				093F6F702C6C30A300CA7006 /* apple_foundation_program_3thApp.swift */,
 				093F6F722C6C30A300CA7006 /* ContentView.swift */,
 				093F6F742C6C30A400CA7006 /* Assets.xcassets */,
@@ -143,23 +142,24 @@
 			path = "apple-foundation-program-3thUITests";
 			sourceTree = "<group>";
 		};
-		093F6F9A2C6C30C400CA7006 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				093F6F9C2C6C34F600CA7006 /* AppleTimeModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		093F6F9B2C6C30DE00CA7006 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				093F6FA02C6C399100CA7006 /* Timer */,
 				7A664C952C6C35DB00FE03D6 /* Home */,
-				093F6F9E2C6C351800CA7006 /* TaskTimer.swift */,
 				7A664C9C2C6C363E00FE03D6 /* BomodrowTimerView.swift */,
 				7A664C9E2C6C368800FE03D6 /* ToDoListView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		093F6FA02C6C399100CA7006 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				093F6FA12C6C39BA00CA7006 /* TaskTimerView.swift */,
+				093F6FA32C6C3C2F00CA7006 /* BackButtonView.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		7A664C952C6C35DB00FE03D6 /* Home */ = {
@@ -303,13 +303,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				093F6F732C6C30A300CA7006 /* ContentView.swift in Sources */,
+				093F6FA42C6C3C2F00CA7006 /* BackButtonView.swift in Sources */,
 				7A664C992C6C35FD00FE03D6 /* HomeButtonView.swift in Sources */,
 				7A664C9B2C6C361100FE03D6 /* AppleBoardView.swift in Sources */,
 				7A664C9F2C6C368800FE03D6 /* ToDoListView.swift in Sources */,
 				093F6F712C6C30A300CA7006 /* apple_foundation_program_3thApp.swift in Sources */,
-				093F6F9F2C6C351800CA7006 /* TaskTimer.swift in Sources */,
 				7A664C972C6C35E500FE03D6 /* HomeView.swift in Sources */,
-				093F6F9D2C6C34F600CA7006 /* AppleTimeModel.swift in Sources */,
+				093F6FA22C6C39BA00CA7006 /* TaskTimerView.swift in Sources */,
 				7A664C9D2C6C363E00FE03D6 /* BomodrowTimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
