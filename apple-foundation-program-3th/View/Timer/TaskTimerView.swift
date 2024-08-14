@@ -24,11 +24,11 @@ struct TaskTimerView: View {
                 ZStack{
                     Circle()
                         .trim(from: 0, to: 1)
-                            .stroke(Color.black.opacity(0.09), style: StrokeStyle(lineWidth: 35, lineCap: .round))
+                        .stroke(Color.black.opacity(0.09), style: StrokeStyle(lineWidth: 35, lineCap: .round))
                         .frame(width: 280, height: 280)
                     Circle()
                         .trim(from: 0, to: 0.05)
-                            .stroke(Color("E65844"), style: StrokeStyle(lineWidth: 35, lineCap: .round))
+                        .stroke(Color("E65844"), style: StrokeStyle(lineWidth: 35, lineCap: .round))
                         .frame(width: 280, height: 280)
                         .rotationEffect(.init(degrees: -90))
                     
@@ -40,10 +40,8 @@ struct TaskTimerView: View {
                         Text("00:00:00")
                             .font(.system(size: 47))
                             .foregroundColor(Color("181818"))
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .fontWeight(.bold)
                     }
-                }
-                .padding(.top, 10)
                 }
                 .padding(.top, 10)
                 .padding(.bottom, 80)
@@ -60,11 +58,13 @@ struct TaskTimerView: View {
                     }
                 }
                 
+                
                 StopButtonView()
                     .padding(.bottom, 50)
             }
         }
     }
+}
 
 #Preview {
     TaskTimerView()
